@@ -88,7 +88,7 @@ export const AuthPage = () => {
               onClick={registerHandler}
               disabled={loading}
             >
-              Registraation
+              Registration
             </button>
           </div>
         </div>
