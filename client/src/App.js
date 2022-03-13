@@ -9,10 +9,14 @@ import {About} from './clientPages/About';
 
 import { BrowserRouter,Route} from 'react-router-dom';
 import  {ClientNavbar} from './ClientNavbar/';
+// import { useSelector } from 'react-redux';
+// import {selectBackground} from './redux/selectors';
 
 function App() {
+  // const bg = useSelector(selectBackground);
   return (
     <>
+    {/* <p>background:{bg}</p> */}
       <BrowserRouter>
         <ClientNavbar />
         <Route exact path="/login">
