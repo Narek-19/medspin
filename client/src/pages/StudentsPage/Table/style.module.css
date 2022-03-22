@@ -1,0 +1,43 @@
+.row span{
+    border:1px solid rgb(0, 0, 138);
+    display: inline-block;
+    font-size: 18px;
+    padding:5px;
+}
+
+.id{
+    width:50px;
+    background-color:#A0DAD1;;
+}
+.name{
+    width:80px;
+    background-color:#469be5;
+}
+.data_name{
+    width:220px;
+    background-color:#A0DAD1;;
+}
+.username{
+    width:120px;
+    background-color:#469be5;
+}
+.data_username{
+    width:200px;
+    background-color:#A0DAD1;;
+}
+.email{
+    width:80px;
+    background-color: #469be5;
+}
+.data_email{
+    width:230px;
+    background-color: #A0DAD1;;
+}
+.edit{
+    background-color: #469be5;
+    cursor: pointer;
+}
+
+.edit a{
+    color:yellow;
+}
