@@ -1,0 +1,23 @@
+.Header{
+    color:white;
+    width:100%;
+    height:450px;
+    background-color: rgb(109, 109, 179);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.headerContent{
+    width:400px;
+    height:400px;
+}
+.headerContent h1{
+    font-size: 38px;
+}
+.headerContent p{
+    font-size: 19px;
+}
+.anyContent{
+    width:300px;
+    height: 400px;
+}

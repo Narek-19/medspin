@@ -1,0 +1,17 @@
+.adminDashboard{
+    display: flex;
+    justify-content: center;
+}
+.menu{
+    width:300px;
+    height:100vh;
+    background-color:#FFFFFF;
+    margin:5px;
+    border-radius: 20px;
+}
+.content{
+    border-radius: 20px;
+    width:1300px;
+    background-color:#FFFFFF;
+    margin:5px;
+}

@@ -1,0 +1,72 @@
+.InfoBar{
+    display:flex;
+    justify-content: center;
+}
+.studentInfo{
+    width:300px;
+    height:700px;
+    background-color: #1E88E5 ;
+}
+.studentImg{
+    margin:5px;
+    width: 100%;
+    text-align: center;
+}
+.studentImg img {
+    width:200px;
+}
+.content{
+    width: 600px;
+    height:700px;
+    background-color: #A0DAD1;
+}
+.info p {
+    background-color: #A0DAD1;
+    font-size: 26px;
+    border:2px solid #1E88E5;
+}
+.info span {
+    border:2px solid #A0DAD1;
+    display: inline-block;
+    width:100%;
+    font-size: 22px;
+}
+.studentCourses{
+    display: flex;
+    justify-content: center;
+
+}
+.studentCourses div{
+    margin:4px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100px;
+    height:100px;
+    background-image: url('https://images-platform.99static.com//KlBLMX8dQrcq6hZGnxf5HSnG29I=/8x543:525x1060/fit-in/500x500/99designs-contests-attachments/123/123360/attachment_123360235');
+}
+
+/* certificate */
+.certificate{
+    margin-top:20px;
+    display: flex;
+    justify-content: center;
+}
+.cert{
+    width:200px;
+    height:300px;
+    border:1px solid green;
+    margin:2px;
+}
+.cert .img, .img1 {
+    width: 100%;
+    height:180px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: red;
+}
+.cert .img{
+    background-image: url('https://cdn4.vectorstock.com/i/1000x1000/45/98/certificate-vector-23584598.jpg');
+}
+.cert .img1{
+    background-image: url('https://cdn.dribbble.com/users/632872/screenshots/15117951/media/f97c4a17b47c0d6f993dcc6771acfb16.jpg?compress=1&resize=400x300');
+}

@@ -1,54 +1,58 @@
 import React from "react";
 import {Link} from 'react-router-dom';
 import * as styles from './style.module.css'; 
-import { Button } from '@material-ui/core';
+import { SignupBtn } from "../components/Medspin/Buttons/SignupBtn";
 
 export const ClientNavbar = () => {
     return (
       <div className={styles.Nav}>
-        <div>
-          <img src="./assets/images/logo.png" />
+        <div className={styles.box1}>
+          <div className={styles.logo}>
+            <h1>
+              <p id={styles.medspin}>Medspin</p>
+              <p id={styles.academy}>Academy</p>
+            </h1>
+          </div>
+          <div className={styles.search}>
+            <input id={styles.search} placeholder="Search..." />
+          </div>
         </div>
-        <div className={styles.menuBox}>
+        <div className={styles.box2}>
           <div className={styles.menuTitle}>
             <ul>
               <li>
                 <Link to="/">
-                  <Button variant="text">Home</Button>
+                  <span variant="text">Home</span>
                 </Link>
               </li>
               <li>
                 <Link to="/contact">
-                  <Button variant="text">Contact</Button>
+                  <span variant="text">Contact</span>
                 </Link>
               </li>
               <li>
                 <Link to="/courses">
-                  <Button variant="text">Courses</Button>
+                  <span variant="text">Courses</span>
                 </Link>
               </li>
               <li>
                 <Link to="/about">
-                  <Button variant="text">About</Button>
-                </Link>
-              </li>
-              <li>
-                <Link to="/login">
-                  <Button variant="text">Login</Button>
+                  <span variant="text">About</span>
                 </Link>
               </li>
             </ul>
           </div>
-          <div className={styles.mediaInfo}>
+          <div className={styles.admin}>
             <ul>
               <li>
-                  <Button variant="outlined">Facebook</Button>
+                <SignupBtn>
+                  <span variant="text">Sign Up</span>
+                </SignupBtn>
               </li>
-              <li>
-              <Button variant="outlined" color="success"> Gmail</Button>
-              </li>
-              <li>
-              <Button variant="outlined">Linkdin</Button>
+              <li id = "login">
+                <Link to="/login">
+                  <span variant="text">Login</span>
+                </Link>
               </li>
             </ul>
           </div>
