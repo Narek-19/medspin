@@ -5,6 +5,7 @@ import {useAuth} from '../../hooks/auth.hook'
 import { AuthContext } from '../../context/AuthContext'
 import { Navbar } from '../../components/Navbar'
 import { Loader } from '../../components/Loader'
+import * as styles from './style.module.css'
 import 'materialize-css'
 
 function Login() {
@@ -21,9 +22,15 @@ function Login() {
       token, login, logout, userId, isAuthenticated
     }}>
       <Router>
-        { isAuthenticated && <Navbar /> }
-        <div className="container">
+        <div className = {styles.adminDashboard}>
+          <div className = {styles.menu}>
+          { isAuthenticated && <Navbar /> }
+          </div>
+          <div className = {styles.content}>
+          <div className="container">
           {routes}
+          </div>
+          </div>
         </div>
       </Router>
     </AuthContext.Provider>
