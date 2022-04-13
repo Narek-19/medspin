@@ -9,21 +9,24 @@ router.post('/generate', auth, async (req, res) => {
   try {
     const baseUrl = config.get('baseUrl')
     const {from} = req.body
-
+    const {title} = req.body
+    const {des} = req.body
+    const {video} = req.body
+    const {img} = req.body
+    console.log(req.body,'reqqq bodyyy');
+    
     const code = shortid.generate()
 
     const existing = await Link.findOne({ from })
-
     if (existing) {
       return res.json({ link: existing })
     }
-
     const to = baseUrl + '/t/' + code
 
     const link = new Link({
-      code, to, from, owner: req.user.userId
+      code, to, from,title ,des,img,video, owner: req.user.userId
     })
-
+    console.log(link,'linkk');
     await link.save()
 
     res.status(201).json({ link })
@@ -43,7 +46,7 @@ router.get('/', auth, async (req, res) => {
 
 router.get('/:id', auth, async (req, res) => {
   try {
-    const link = await Link.findById(req.params.id)
+    const link = await Link.findById(req.params.id);
     res.json(link)
   } catch (e) {
     res.status(500).json({ message: 'Что-то пошло не так, попробуйте снова' })

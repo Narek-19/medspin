@@ -1,19 +1,51 @@
 .Nav{
     display:flex;
     justify-content: space-around;
+    align-items: center;
     width:100%;
-    background-color: #A0DAD1;
+    height:100px;
+    background-color:white;
 }
-ul li a{
+.box1, .box2{
+    display: flex;
+    align-items: center;
+}
+#medspin{
+    color:#004BE1;
+    height: 24px;
+    font-size: 30px;
+    font-weight: bold;
+}
+#academy{
     color:black;
+    font-size: 24px;
 }
-ul li{
+#search{
+    border:1px solid #5086F2;
+    width:460px;
+    height:40px;
+    background-color: #5086F2;
+    color:#FFFFFF;
+    border-radius: 19px;
+    margin-top:10px;
+    margin-left: 20px;
+    padding: 5px;
+}
+.menuTitle ul li {
     display:inline-block;
+    margin:0px 10px;
 }
-
-.mediaInfo ul li Button{
-    margin: 5px;
-}   
+.menuTitle ul li a{
+    color:#5086F2;
+    font-size: 24px;
+}
+.admin ul li{
+    display: inline-block;
+}
+.admin ul li a{
+    color:#5086F2;
+    font-size: 24px;
+}
 
 @media only screen and (max-width:700px){
     

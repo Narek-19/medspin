@@ -3,7 +3,9 @@
   padding:0;
 }
 @import "~materialize-css/dist/css/materialize.min.css";
-
+body{
+  background-color: #E4ECF7;
+}
 
 input.yellow-input {
   border-bottom: 1px solid #fff!important;

@@ -5,7 +5,6 @@ const initialState = {
     student:null
 }
 const students = (state = initialState, action)=>{
-    console.log(action,"students");
     switch(action.type){
         case "GET_STUDENTS":
             return getStudents(state,action);
