@@ -1,13 +1,10 @@
 .adminDashboard{
     border-radius: 20px;
     width: 100%;
-    background-color:white;
+    background-color:#5086f2;
     display: block;
     height: 100vh;
 }
 .adminDashboard ul li{
     width: 100%;
-}
-.adminDashboard ul li a{
-    color:black;
 }
