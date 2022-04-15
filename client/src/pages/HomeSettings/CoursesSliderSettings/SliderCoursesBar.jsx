@@ -1,18 +1,22 @@
+import React, { useEffect } from "react";
 import { connect } from "react-redux";
-import React from "react";
-import {getSlider} from "../../../redux/actions";
+import {getSlider} from "../../../redux/actions/";
+
 import * as styles from './style.module.css';
 
 const SliderCoursesBar =(props)=>{
-    
+    const {getSlider} = props;
     const arraySlide = [
-        {title:"Title1",img:"https://klass.novaclearning.com/theme/images/default.jpg",des:"message1"},
-        {title:"Title2",img:"https://klass.novaclearning.com/theme/images/default.jpg",des:"message2"},
-        {title:"Title3",img:"https://klass.novaclearning.com/theme/images/default.jpg",des:"message3"}
+        {title:"About Mri",img:"https://leverageedu.com/blog/wp-content/uploads/2020/04/Free-Online-Courses-with-Certificates.jpg",des:"Learn About MRI History"},
+        {title:"MRI",img:"https://thumb9.shutterstock.com/mosaic_250/177774240/1485832811/stock-vector-internet-education-concept-e-learning-resources-distant-online-courses-vector-line-icon-1485832811.jpg",des:"Learn what is MRI"},
+        {title:"Why?",img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoMXixD-C7NQZyh22zfHMNT1m8rNUpidVAeh80u6SiYuVNKBHGfb3gGJN5-sbspOANScY&usqp=CAU",des:"MRI use"},
+        {title:"Online classes",img:"https://prod-discovery.edx-cdn.org/media/course/image/0e575a39-da1e-4e33-bb3b-e96cc6ffc58e-8372a9a276c1.png",des:"Online MRI"},
+        {title:"Online classes",img:"https://prod-discovery.edx-cdn.org/media/course/image/0e575a39-da1e-4e33-bb3b-e96cc6ffc58e-8372a9a276c1.png",des:"Online MRI"}
     ]
 
+
     const handleChange =()=>{
-        props.getSlider(arraySlide);
+        getSlider(arraySlide);
     }
 
     return(
@@ -23,4 +27,4 @@ const SliderCoursesBar =(props)=>{
         </div>
     )
 }
-export default connect(null,getSlider)(SliderCoursesBar);
+export default connect(null,{getSlider})(SliderCoursesBar);
