@@ -17,6 +17,7 @@ export const Navbar = () => {
     <nav className = {styles.adminDashboard}>
         <ul>
           <li><NavLink to="/settings">Settings</NavLink></li>
+          <li><NavLink to="/settings">Settings2</NavLink></li>
           <li><NavLink to = "/home-settings">Home</NavLink></li>
           <li><NavLink to="/students">Students</NavLink></li>
           <li><NavLink to="/dashboard">DashBoard</NavLink></li>
