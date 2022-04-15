@@ -1,16 +1,14 @@
 import React,{useEffect,useState} from "react";
 import { connect } from "react-redux";
 import { selectCourseSlider } from "../../redux/selectors"; 
-import { getSlideCourses } from "../../redux/actions/Home";
 import {Slider} from './Slider';
 
 import * as styles from "./style.module.css";
 
 const CourseSlider =(props)=> {
-    const {courseSlider, getCourseSlider} = props;
+    const {courseSlider} = props;
     const [slider, setSliders] = useState();
     const [currentPage,setCurrentPage] = useState(0);
-  console.log(courseSlider,"sssssssss");
     const filterSildes = (slides) => {
         const filteredData = [];
         const data = [];
@@ -25,10 +23,9 @@ const CourseSlider =(props)=> {
         }
         setSliders(filteredData);
       }
-
       useEffect(()=>{
-        getSlideCourses ();
-      }, []);
+        filterSildes(courseSlider);
+      },[])
 
       const changeNext = () => {
         if(currentPage < 1){
@@ -51,13 +48,13 @@ const CourseSlider =(props)=> {
         <div className = {styles.CourseSlider}>
             <Slider page = {currentPage} slider = {slider}/>
             <div className = {styles.Controls}>
-                <div onClick = {changeNext}>Prev</div>
-                <div onClick = {changePrev}>Next</div>
-        </div>
+                <div onClick = {changeNext}>&#8249;</div>
+                <div onClick = {changePrev}>&#8250;</div>
+            </div>
         </div>
     )
 }
 const mapStateToProps =(state)=> ({
   courseSlider:selectCourseSlider(state)
 })
-export default connect(mapStateToProps,{getSlideCourses })(CourseSlider) 
+export default connect(mapStateToProps)(CourseSlider) 
