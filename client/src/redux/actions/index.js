@@ -26,3 +26,12 @@ export const getStudent =(index)=>{
         });
     };
 };
+//slider
+export const getSlider =(slider)=>{
+    return (dispatch)=>{
+        dispatch({
+            type:"getSlider",
+            payload:slider
+        })
+    }
+}
