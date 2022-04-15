@@ -8,7 +8,7 @@
   position: relative;
 }
 .Controls{
-    top:50%;
+    top:41%;
     left:0;
     transform: translate(0,-50%);
     width:100%;
@@ -16,4 +16,17 @@
     position: absolute;
     display: flex;
     justify-content: space-between;
+}
+.Controls div{
+  width:30px;
+  height:30px;
+  color:white;
+  text-align: center;
+  font-size: 30px;
+  margin: 0;
+  padding:0;
+  line-height: 80%;
+  cursor: pointer;
+  background-color: #5086F2;
+  border-radius: 36px;
 }

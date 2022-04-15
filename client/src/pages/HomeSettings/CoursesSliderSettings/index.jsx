@@ -7,9 +7,9 @@ const CoursesSliderSettings =(props)=> {
 
     return (
         <div className = {styles.CoursesSliderSettings}>
-            <h2>{props.title} Part</h2>
-            <SearchCourse title = {props.title}/>
-            <SliderCoursesBar title = {props.title}/>
+            <h2>Courses Slider</h2>
+            <SearchCourse />
+            <SliderCoursesBar />
         </div>
     )
 }
